@@ -19,7 +19,7 @@ class CaptchaController extends Controller
      * @return array|mixed
      * @throws Exception
      */
-    public function getCaptcha(Captcha $captcha, string $config = 'default')
+    public function getCaptcha(Captcha $captcha, $groupCode, string $config = 'default')
     {
         if (ob_get_contents()) {
             ob_clean();
